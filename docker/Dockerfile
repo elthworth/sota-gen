@@ -76,7 +76,7 @@ RUN pip install -e "git+https://github.com/PramaLLC/BEN2.git#egg=ben2"
 WORKDIR /workspace
 
 # Copy the project
-COPY pipeline_service /workspace
+COPY pipeline_service/ /workspace/
 
 EXPOSE 10006
 CMD ["python",  "serve.py"]
